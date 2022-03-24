@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+.menu{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  height:100vh;
+  position: fixed;
+  width: 3%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.link-menu{
+  margin: 20px;
+}
+@keyframes menu {
+  0%{
+    transform: rotate(0deg);
+  }
+  35%{
+    transform: rotate(25deg);
+  }
+  70%{
+    transform: rotate(-25deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.link-menu:hover{
+  animation: menu 1s 0.1s infinite;
+}
+.social{
+  background-color: black;
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  flex-direction: column;
+  z-index: 2;
+}
+.container-left, 
+.container-right{
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+.main{
+  padding-left: 3%;
+  display: flex;
+  height: 100vh;
+  
+}
+.title{
+  text-align: right;
+  font-weight: 200;
+  font-size: 200px;
+}
+.span{
+  font-weight: bold;
+}
+.text{
+  font-size: 25px;
+  width: 40%;
+  padding: 15px;
+  margin: 10px 15px 10px 15px;
+  border-radius: 15px;
+  text-align: center;
+  flex-grow: 1;
+  background-color:  lightgrey;
+}
+.container-right{
+ justify-content: space-between;
+ flex-direction: column;
+}
+.container-text{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.container-left{
+  display: flex;
+  flex-wrap: wrap;
+}
+.color-img{
+  width: 50%;
+  height: 50%;
+  flex-grow: 1;
+}
+.img1{
+  background-color: darkblue;
+}
+.img2{
+  background-color: red;
+}
+.img3{
+  background-color: yellow;
+}
+.img4{
+  background-color: aqua;
+  border-radius: 0 0 50% 0;
+}
+.about{
+  width: 100%;
+  height: 100vh;
+  padding-left: 100px;
+  position: relative;
+}
+.about-right{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+   align-items: center;
+}
+.img-about{
+  background-color: blue;
+  width: 217px;
+  height: 220px;
+  align-self: flex-end;
+}
+.img-about1{
+  background-color: lightskyblue;
+  width: 165px;
+  height: 167px;
+}
+.img-about2{
+  background-color: purple;
+  width: 170px;
+  height: 175px;
+  align-self: flex-start;
+}
+.about-img{
+  box-shadow: 10px 10px 0 black;
+  border-radius: 0 15px 0 15px;
+}
+.about-contant{
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.about-bg{
+  position: absolute;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.about-title{
+  color:  white;
+  font-size: 35px;
+}
+.bg-text{
+  color: aqua;
+  font-size: 125px;
+  padding-left: 150px;
+  padding-top: 20px;
+  opacity: 0.3;
+  font-weight: bold;
+}
+.about-text{
+ color: white;
+ font-size: 25px;
+ padding-bottom: 25px;
+}
+.about-left{
+  display: flex;
+   flex-direction: column;
+  justify-content: space-between;
+}
+.adv-bg{
+  background-color: yellow;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.advantages{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding-left: 100px;
+}
+.adv-title{
+  font-size: 35px;
+  padding-left: 45px;
+  width: 40%;
+}
+.adv-text{
+  width: 40%;
+  font-size: 50px;
+  line-height: 60px;
+}
+.advantages-contant{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.advantages-contant img{
+  width: 40%;
+  flex-grow: 1;
+  max-width: 100%;
+}
